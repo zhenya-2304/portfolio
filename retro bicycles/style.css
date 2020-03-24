@@ -1,0 +1,132 @@
+body{
+	margin:0;
+}
+header {
+	height: 100vh;
+	width: 100%;
+}
+.header {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+.header__img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.header__menu {
+	margin-top: 35px;
+	width: 600px;
+	height: 100px;
+}
+.menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.menu__item {
+	flex: 1 1 20%;
+	list-style: none;
+}
+.menu__link{
+	text-decoration: none;
+	color: #4d4959;
+	font-size: 13px;
+	transition: font-size .5s 0s;
+}
+.menu__link:hover{
+	font-size: 15px;
+}
+.about {
+	margin: 0;
+	padding: 100px 250px 140px 250px;
+	background: #f7f7f7;
+}
+.description {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.description__icon {
+}
+.description__title h2{
+	font-size: 18px!important;
+	text-transform: uppercase;
+}
+.description__text {
+	font-size: 17px;
+}
+.works, .works-2 {
+	display: flex;
+}
+.works__img-work {
+	flex: 1 1 66.6666%;
+}
+.img-work {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.img-work__image{
+	height: 100%;
+	width: 100%;
+	transition: transform 1s 0.1s;
+}
+.img-work__image:hover{
+	transform: scale(1.1);
+}
+.img-work__icon {
+	position: absolute;
+}
+.works__desc-work {
+	flex: 1 1 33.3333%;
+}
+.desc-work {
+	display: flex;
+	flex-direction: column;
+}
+.desc-work__description {
+	padding: 70px 65px 80px 65px;
+	flex: 1 1 66.6666%;
+}
+.desc-work .description__text::after {
+    display: flex;
+    align-self: center;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    content: "";
+    border-bottom: 1px solid #d7d7d7;
+    width: 50px;
+}
+.desc-work__img {
+	display: flex;
+	justify-content: center;
+	flex: 1 1 33.3333%;
+}
+.desc-work__triangle{
+	margin-top: -10px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background: #fff;
+}
+.works-2__img-work, .works-2__desc-work {
+	flex: 1 1 33.3333%;
+}
+.reviews{
+	background:#f7f7f7;
+}
